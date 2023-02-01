@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html">
+<head>
+    <style>
+        #green {
+            color: green;
+        }
+        .yellow {
+            color: yellow;
+        }
+        div {
+            color: red;
+        }
+    </style>
+    <title>Especificidad CSS</title>
+</head>
+<body>
+    <!-- este div es coincidente con el selector de etiqueta div -->
+    <div class="yellow">Hola1</div>
+    <!-- este div es coincidente con el selector de etiqueta div y el selector #green -->
+    <div id="green" class="yellow">Hola2</div>
+    <div>Hola3</div>
+</body>
+</html>
