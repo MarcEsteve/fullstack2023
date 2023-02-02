@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROPIEDAD DISPLAY</title>
+    <style>
+        span {
+            border: 2px solid red;
+            /* el atributo width no tiene efecto porque span es de tipo inline */
+            width: 1420px;
+        }
+        /* Tiene sentido que sean BLOCK por su naturaleza del contenido
+        h1 {
+
+            display: inline;
+        } */
+
+        #div {
+            border: 2px solid red;
+            width: 300px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <h1>TITULAR</h1>
+    <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum esse eaque corrupti ea? Delectus corporis rerum expedita iusto nobis, harum laudantium aliquam reiciendis placeat vitae sunt atque, voluptate mollitia nam.</span>
+    <span>Texto 1</span>
+    <span>Texto 1</span>
+    <p>Texto párrafo</p>
+    <span>Texto 1</span>
+    <span>Texto 1</span>
+    <span id="div">Texto 1</span>
+    <span id="div">Texto 2</span>
+</body>
+</html>
