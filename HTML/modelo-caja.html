@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo Caja</title>
+    <style>
+        /* Anchura total = 320px (width) + 20px (left + right padding) + 10px (left + right
+        border) + 0px (left + right margin) = 350px */
+        div {
+            /* width: 320px; */
+            height: 200px;
+            width: 50%;
+            padding: 10px;
+            border: 3px solid rgb(177, 90, 90);
+            margin: 10px;
+            background-color: powderblue;
+        }
+        #id1 {
+            width: 320px;
+            padding: 10px;
+            /* forma simplificada de utilizar las propiedades border-width, border-style y bordercolor */
+            border: 5px solid gray;
+            margin: 20px;
+        }
+        #id2 {
+            width: 320px;
+            padding: 10px;
+            border: 5px solid gray;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div>Hola</div>
+    <div style="text-align: justify;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias ipsa repellat blanditiis! Vel natus iusto possimus et in, accusantium facilis odit! Accusamus illo odio natus aut reprehenderit quis pariatur ex.</div>
+    <div id="id1">Hola mundo</div>
+    <div id="id1">Hola mundo</div>
+    <div id="id2">Hola mundo</div>
+    <div id="id2">Hola mundo</div>
+
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Width y Height</title>
+    <style>
+        div.ex1 {
+            width: 300px;
+            background-color: blue;
+        }
+        div.ex2 {
+            width: 300px;
+            padding: 25px;
+            /* Si se elimina esa propiedad, la anchura del elemento es 300+25+25=350px */
+            box-sizing: border-box;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Width y Height</h1>
+    <div class="ex1">Texto</div>
+    <br>
+    <div class="ex2">Texto</div>
+    <br>
+    <!-- No recibe la clase, no es un div -->
+    <p class="ex1">Texto</p>
+</body>
+</html>

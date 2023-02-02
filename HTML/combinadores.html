@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Combinadores</title>
+    <style>
+        /* se aplica a un elemento p que esté contenido dentro de un elemento div y que no necesariamente tiene que ser ancestro directo */
+        /* div p {
+            background-color: yellow;
+        } */
+        p {
+            background-color: red;
+        }
+        h2 + p {
+            /* Adyacentes */
+            color: red;
+        } 
+
+        h2 ~ p {
+            /* Adyacentes general */
+            color: rgb(0, 255, 26);
+        }
+        div > p {
+            color: rgb(0, 26, 255);
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <!-- se aplica la propiedad background-color de la combinación de selectores div p, que es más específica que el selector p -->
+        <!-- sin embargo, la combinación de selectores div p no sería más específica que otros como #hola p o .saludos -->
+        <p>Buenos días</p>
+        <section>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam ab iure doloribus enim sit doloremque, consectetur inventore unde accusantium totam perferendis expedita voluptas sint quod accusamus natus saepe! Quisquam, magni!</p>
+        </section>
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod aperiam similique saepe in laborum magnam necessitatibus, tempora quas nam odio ullam inventore recusandae reiciendis fugiat. Sequi ratione dolorum molestias laborum.</p>
+    <div>
+        <h2>H2 NO aplica</h2>
+        <p>P Aplica</p>
+        <h2>H2 NO aplica</h2>
+        <h3>H3 NO aplica</h3>
+        <p>P NO aplica</p>
+        <h2>NO aplica</h2>
+        <p>P Aplica</p>
+        <p>Aplica?</p>
+        <section>
+            <p>Aplica?</p>
+        </section>
+    </div>
+</body>
+</html>
