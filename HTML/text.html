@@ -10,18 +10,26 @@
             text-align: center;
             /* superrayado */
             text-decoration: overline;
+            letter-spacing: 3px;
+            word-spacing: 10px;
+            text-shadow: 0.5px 0.5px 1px rgb(0, 0, 0);
         }
         h2 {
             text-align: left;
             /* tachado */
             text-decoration: line-through;
+            letter-spacing: -3px;
         }
         h3 {
             /* subrayado */
             text-decoration: underline;
             text-align: right;
+            word-spacing: -5px;
         }
-        p {
+        p{
+            font-size: 50px;
+        }
+        p.indent {
             text-align: justify;
             text-indent: 50px;
         }
@@ -37,6 +45,27 @@
             /* Capitalización */
             text-transform: capitalize;
         }
+        p.small {
+            line-height: 0.7;
+        }
+        p.big {
+            line-height: 1.8;
+        }
+        p.rtl {
+            direction: rtl;
+        }
+        p.serif {
+            font-family: "Times New Roman", Times, serif;
+        }
+        p.sansserif {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        p.italic {
+            font-style: italic;
+        }
+        p.oblique {
+            font-style: oblique;
+        }
     </style>
 </head>
 <body>
@@ -44,7 +73,13 @@
     <h2>Cabecera 2 (left)</h2>
     <h3>Cabecera 3 (right)</h3>
     <p class="uppercase">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate pariatur molestias reprehenderit magnam magni voluptas, quos excepturi? Corrupti non sequi omnis, cum sapiente deleniti error nostrum perferendis accusantium quod placeat!</p>
-    <p class="lowercase">Lorem ipsum dolDHJSDHSJBDHSDHSGDsit amet consectetur adipisicing elit. Numquam consequuntur, minima quod officiis in fugiat, pariatur provident mollitia modi accusamus ad! Reiciendis voluptatibus ratione maiores ipsum. Assumenda dolores quia dolorum.</p>
-    <p class="capitalize">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis, esse ab in expedita culpa officiis nisi voluptate consequuntur porro eum atque molestias perspiciatis minima, quis illo ad? A, doloribus at.</p>
+    <p class="lowercase small">Lorem ipsum dolDHJSDHSJBDHSDHSGDsit amet consectetur adipisicing elit. Numquam consequuntur, minima quod officiis in fugiat, pariatur provident mollitia modi accusamus ad! Reiciendis voluptatibus ratione maiores ipsum. Assumenda dolores quia dolorum.</p>
+    <p class="capitalize big indent">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis, esse ab in expedita culpa officiis nisi voluptate consequuntur porro eum atque molestias perspiciatis minima, quis illo ad? A, doloribus at.</p>
+    <p class="rtl">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem corrupti, voluptate, similique dicta reprehenderit aliquam officiis unde quod deserunt eius iure. Officiis, quis repudiandae reprehenderit nobis sapiente consectetur odit. Nulla!</p>
+    <p class="serif">Times New Roman font</p>
+    <p class="sansserif">Arial font</p>
+    <p class="italic">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo debitis deleniti commodi ab fugiat obcaecati voluptates molestias, corporis perspiciatis magnam numquam dolorum, similique quisquam? Asperiores, sapiente? Distinctio perspiciatis quos praesentium?</p>
+    <p class="sansserif italic">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, deleniti facere id quam libero porro non ab voluptates beatae laborum ducimus sapiente. Tempore at ratione neque dolore odio doloremque assumenda.</p>
+    <p class="sansserif oblique">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, deleniti facere id quam libero porro non ab voluptates beatae laborum ducimus sapiente. Tempore at ratione neque dolore odio doloremque assumenda.</p>
 </body>
 </html>
