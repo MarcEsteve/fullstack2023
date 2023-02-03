@@ -29,18 +29,25 @@
         }
         nav.main-nav {
             display:inline-block;
-            width: 100%;
+            width: calc(100% - 63px);
             text-align: right;
         }
         .main-header > div {
             display:inline-block;
+        }
+        h1.main-header-brand {
+            color: #0e4f1f; 
+            text-decoration: none; 
+            font-weight: bold; 
+            font-size: 22px;
         }
     </style>
 </head>
 <body>
     <header class="main-header">
             <div>
-                <img src="../IMG/lo-go.png" alt="Logo del Banco">
+                <!-- <img src="../IMG/lo-go.png" alt="Logo del Banco"> -->
+                <h1 class="main-header-brand">Banco</h1>
             </div>
             <nav class="main-nav">
                 <ul class="main-nav-items">
