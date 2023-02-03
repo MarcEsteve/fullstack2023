@@ -4,10 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejercicio 7 de proyecto</title>
+    <title>Ejercicio 8 de proyecto</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <style>
         * {
             box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
         }
         body {
             margin: 0px;
@@ -20,6 +24,10 @@
         }
         li.main-nav-item {
             display:inline-block;
+            margin: 1px; 
+            padding: 13px;
+            border: 3px solid rgb(19, 13, 13);
+            background-color: #64fd8d;
         }
         ul.main-nav-items {
             display:inline-block;
@@ -29,17 +37,27 @@
         }
         nav.main-nav {
             display:inline-block;
-            width: calc(100% - 63px);
+            width: calc(100% - 80px);
             text-align: right;
+            vertical-align:middle;
         }
         .main-header > div {
             display:inline-block;
+            vertical-align:middle;
         }
         h1.main-header-brand {
             color: #0e4f1f; 
             text-decoration: none; 
             font-weight: bold; 
             font-size: 22px;
+        }
+        ul{
+            font-size: 20px;
+        }
+        a {
+            text-decoration:none;
+            font-weight: 900;
+            color: #0e4f1f;
         }
     </style>
 </head>
@@ -51,11 +69,21 @@
             </div>
             <nav class="main-nav">
                 <ul class="main-nav-items">
-                    <li class="main-nav-item">Inicio</li>
-                    <li class="main-nav-item">Servicios</li>
-                    <li class="main-nav-item">Acceso cliente</li>
-                    <li class="main-nav-item">FAQ</li>
-                    <li class="main-nav-item">Contacto</li>
+                    <a href="http://">
+                        <li class="main-nav-item">Inicio</li>
+                    </a>
+                    <a href="http://">
+                        <li class="main-nav-item">Servicios</li>
+                    </a>
+                    <a href="http://">
+                        <li class="main-nav-item">Acceso cliente</li>
+                    </a>
+                    <a href="http://">
+                        <li class="main-nav-item">FAQ</li>
+                    </a>
+                    <a href="http://">
+                        <li class="main-nav-item">Contacto</li>
+                    </a>
                 </ul>
             </nav>
     </header>

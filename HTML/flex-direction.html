@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLEXBOX</title>
+    <style>
+        #flex-container {
+            display: flex;
+            /* Realizar pruebas con los 4 valores (row es por defecto) */
+            /* flex-direction: row;
+            flex-direction: row-reverse;
+            flex-direction: column; */
+            flex-direction: column-reverse;
+        }
+        .flex-container > div {
+            background-color: blue;
+            width: 50%;
+            margin: 10px;
+            text-align: center;
+            line-height: 75px;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div id="flex-container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+</body>
+</html>
