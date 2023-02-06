@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* p::before {
+            content: "Prefijo -";
+            /* Para las imágenes
+            content:url(imagen.jpg); 
+            background-color: yellow;
+            color: red;
+            font-weight: bold;
+        } */
+        p::first-letter {
+            font-size: 50px;
+            color: #8A2BE2;
+        }
+        ::selection {
+            color: red;
+            background: yellow;
+        }
+        a[target="_blank"] {
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <p>Había una vez</p>
+    <p>Otro párrafo</p>
+    <a href="http://" target="_blank" rel="noopener noreferrer">ENLACE con Target</a><br>
+    <a href="#">Enlace sin target</a><br>
+    <a href="http://" target="_self" rel="noopener noreferrer">Otro enlace pero no _blank</a>
+    <p>Las primeras letras se</p>
+    <p>Agrandan y colorean</p>
+    <p>CSS pseudo-elemento “before”</p>
+    <p>Colocará antes de los elementos
+    seleccionados contenido específico</p>
+    <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem, non quos nisi explicabo et iure dolorem! Saepe at magnam accusamus, nulla modi, exercitationem, quibusdam debitis rem commodi tenetur quod. Eius!</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium commodi dicta voluptatibus? Sequi at dolore culpa quae tempore deserunt magni illum aut laudantium tenetur nisi, sed, quidem explicabo voluptates eum.</p>
+</body>
+
+</html>

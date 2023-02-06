@@ -1,21 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flex WRAP</title>
+    <title>Align SELF</title>
     <style>
         .flex-container {
             display: flex;
-            justify-content:space-evenly;
-            /* Necesaria una altura para revisar align-items */
+            /* Cuidado con laS propiedas de altura */
             height: 200px;
-            align-items:center;
-            background-color: blue;
+            background-color: red;
         }
         .flex-container > div {
-            background-color: red;
+            background-color: blue;
+            color: white;
             width: 100px;
             margin: 10px;
             text-align: center;
@@ -26,9 +25,10 @@
 </head>
 <body>
     <div class="flex-container">
-        <div><h1>1</h1></div>
-        <div><p>2</p></div>
-        <div><h2>3</h2></div>
+        <div>1</div>
+        <div style="align-self:flex-start">2</div>
+        <div style="align-self: center">3</div>
+        <div style="align-self: flex-end">4</div>
     </div>
 </body>
 </html>
