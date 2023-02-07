@@ -93,3 +93,32 @@ const date2 = new Date(milisegundos);
 console.log(date2);
 
 //Conversión de tipos
+
+//parseInt() convierte de string a entero
+// 2
+const a = parseInt('2');
+// 2
+const b = +'2';
+// NaN
+const c = +'d';
+// 2
+const d = Number('2');
+
+//De string a float 
+// 2.32
+const e = parseFloat('2.32');
+// 2.32
+const f = +'2.32';
+// 2.32
+const g = Number('2.32');
+// 0
+const h = Number('');
+// NaN
+const i = Number('99 88');
+
+//Conversión de number a string
+const j = 2;
+// "2" (pero de tipo string)
+console.log(j.toString());
+// "2" (pero de tipo string)
+console.log(String(j));
