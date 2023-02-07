@@ -9,7 +9,7 @@ let alert2 = 3; //DECLARACIÓN Y ASIGNACIÓN
 console.log(alert2);
 // no permitido porque ya se declaró antes
 alert2 = 3;
-alert2=15;// permitido
+alert2= 15;// permitido
 
 //Constante
 const alert3 = 13;
