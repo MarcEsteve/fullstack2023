@@ -1,4 +1,4 @@
-const angulo1=80, angulo2=60, angulo3=30;
+const angulo1=90, angulo2=60, angulo3=30;
 let sumAngulos= angulo1+angulo2+angulo3;
 
 if (sumAngulos==180) {
