@@ -87,3 +87,31 @@ console.log(frutas4);
 const frutas5 = frutas.slice(1);
 // ["Orange", "Lemon", "Apple", "Mango"]
 console.log(frutas5);
+
+//Reverse
+console.log(frutas);
+console.log(frutas.reverse());
+
+const frutas7 = ['Banana', 'Orange', 'Apple', 'Mango'];
+// ["Apple", "Banana", "Mango", "Orange"]
+console.log(frutas7.sort());
+// ordenación ascendente de números enteros mediante una función de comparación
+const puntos = [40, 100, 1, 5, 25, 10];
+const puntos2 = puntos.sort();
+// [1, 10, 100, 25, 40, 5]
+console.log(puntos2);
+
+const puntos3 = puntos.sort((a, b) => a - b);
+// [1, 5, 10, 25, 40, 100]
+console.log(puntos3);
+
+// esta forma de ordenar elementos es muy potente puesto que pueden ordenarse también objetos a partir de alguna propiedad
+const coches3 = [
+{ type: 'Volvo', year: 2016 },
+{ type: 'Saab', year: 2001 },
+{ type: 'BMW', year: 2010 }
+];
+// función para ordenar ascendentemente por la propiedad year
+const cochesOrdenados = coches3.sort((a, b) => a.year - b.year);
+// [{type: "Saab", year: 2001}, {type: "BMW", year: 2010}, {type: "Volvo", year:2016}]
+console.log(cochesOrdenados);
