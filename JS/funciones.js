@@ -76,3 +76,21 @@ console.log(funcion1(6));
 // forma simplificada de la función de flecha
 const funcion2 = altura => 5 * altura / 2;
 console.log(funcion2(10));
+
+setTimeout(() => {
+    console.log('Hola');
+    setTimeout(() => {
+        console.log('Adiós');
+    }, 2000);
+}, 5000)
+setTimeout(() => {
+    console.log('Buenas tardes');
+    }, 100)
+console.log('Buenos días');
+//_________________
+setTimeout(() => {
+    console.log('Esta instrucción se ejecuta después de 5 segundos');
+    }, 5000);
+setInterval(() => {
+    console.log('Esta instrucción se ejecuta cada 5 segundos');
+    }, 5000);
