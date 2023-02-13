@@ -57,4 +57,8 @@ console.log(oscar.introduce());
 console.log(oscar.lastname);
 console.log(oscar.myName);
 // error porque el método no privado y no se puede acceder a él (es undefined) e invocar a undefined genera un error
-console.log(oscar.fullName());
+// console.log(oscar.fullName());
+
+const marc = new Person('Marc'); //Creación del objeto marc del tipo Person
+console.log(marc.name); //Marc
+console.log(marc.introduce()); //Hola, mi nombre es Marc González
