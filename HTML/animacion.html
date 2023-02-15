@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Animación 3D con CSS</title>
+	<style>
+		.box {
+			position: relative;
+			width: 200px;
+			height: 200px;
+			margin: 100px auto;
+			transform-style: preserve-3d;
+			animation: rotate 3s linear infinite;
+		}
+		.box div {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			background-color: #e74c3c;
+			opacity: 0.7;
+			border-radius: 10px;
+		}
+		.box div:nth-child(1) {
+			transform: rotateX(45deg) translateZ(100px);
+		}
+		.box div:nth-child(2) {
+			transform: rotateY(45deg) translateZ(100px);
+		}
+		.box div:nth-child(3) {
+			transform: rotateZ(45deg) translateZ(100px);
+		}
+		@keyframes rotate {
+			from {
+				transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+			}
+			to {
+				transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="box">
+		<div></div>
+		<div></div>
+		<div></div>
+	</div>
+</body>
+</html>
