@@ -1,9 +1,14 @@
 //Ejercicio 1 de Proyecto
-let gestor = {
-    nombre:"Pepito",
-    dinero: 200,
-    numero: "Cuenta X"
-};
+// let gestor = {
+//     nombre:"Pepito",
+//     dinero: 200,
+//     numero: "Cuenta X"
+// };
+let gestor = {};
+gestor.nombre ="Pepito";
+gestor.dinero = 200;
+gestor.cuenta = "Cuenta X";
+
 let cliente = {
     nombre: "Juanito",
     numCuenta: 8074583224323,
